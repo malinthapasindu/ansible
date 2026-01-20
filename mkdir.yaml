@@ -1,0 +1,7 @@
+- name: Create directory /home/nable/test1
+  hosts: myhosts
+  tasks:
+    - name: Ensure /home/test1 exists
+      ansible.builtin.file:
+        path: /home/nable/test1
+        state: directory
